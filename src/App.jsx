@@ -19,7 +19,7 @@ function App() {
     <>
       <div className="min-h-screen bg-gray-100" id="addContact">
         <img src={user} alt="" className="imguser"/>
-        <h1 className="text-3x1 font-sembold text-center ">Phones Book</h1>
+        <h1 className="text-3x1 font-sembold text-center ">Phone Book</h1>
         <div className="max-w-md mx-auto p-4 bg-white shadow-lg rounded-lg">
           <NewContactForm addNewContactToPhoneBook={addNewContactToPhoneBook} />
           <ShowContacts newContact={newContact} searchContact={searchContact}setSearchContact={setSearchContact} />
@@ -35,7 +35,7 @@ function NewContactForm({ addNewContactToPhoneBook }) {
   const [phoneNumber, setPhoneNumber] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
-    addNewContactToPhoneBook({ firstName, lastName, phoneNumber });
+    addNewContactToPhoneBook({ firstName, lastName, phoneNumber});
 
 
     setFirstName("");
@@ -78,7 +78,7 @@ function NewContactForm({ addNewContactToPhoneBook }) {
         className="w-full px-3 py-2 border rounded-lg"
       />
       <br />
-      <button type="submit" className="w-full bg-blye-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Create</button>
+      <button type="submit" className="w-full bg-blye-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">CREATE</button>
     </form>
   );
 }
