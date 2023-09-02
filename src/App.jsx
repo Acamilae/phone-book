@@ -105,16 +105,16 @@ function ShowContacts({ newContact, searchContact, setSearchContact }) {
         className="w-full px-3 py-2 border rounded-lg"
         type="text"
         value={searchContact}
-        placeholder="Find Someone"
+        placeholder="Find"
         onChange={(event) => setSearchContact(event.target.value)}
       />
 
       <table className="inp-find w-full mt-4">
         <thead>
           <tr>
-            <th className="py-3">First Name</th>
+            <th className="py-3">Name</th>
             <th className="py-3">Last Name</th>
-            <th className="py-3">Phone Number</th>
+            <th className="py-3">Phone </th>
           </tr>
         </thead>
         <tbody>
